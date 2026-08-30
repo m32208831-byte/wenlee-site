@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>杭州文丽化工有限公司 - 医药中间体 · 精细化工产品供应商</title>
+<meta name="description" content="杭州文丽化工有限公司位于浙江杭州，专业供应医药中间体与精细化工产品，支持产品定制。" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ============ 顶部联系栏 ============ -->
+<div class="topbar">
+  <div class="container">
+    <div class="contact">
+      <span>☎ <b>0571-85376473</b></span>
+      <span>✉ sales@wenleechemical.com</span>
+    </div>
+    <div class="lang">
+      <a href="#" class="on">中文</a><span class="sep">/</span><a href="#">EN</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 头部导航 ============ -->
+<header class="header">
+  <div class="container">
+    <a class="logo" href="#">
+      <div class="mark">W</div>
+      <div class="txt">
+        <b>杭州文丽化工</b>
+        <small>HANGZHOU WENLEE CHEMICAL</small>
+      </div>
+    </a>
+    <nav class="nav">
+      <a href="#" class="on">首页</a>
+      <a href="#about">公司简介</a>
+      <a href="#products">产品中心</a>
+      <a href="#news">新闻中心</a>
+      <a href="#factory">技术支持</a>
+      <a href="#contact" class="btn-q">在线询盘</a>
+      <a href="#contact">联系我们</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ Hero ============ -->
+<section class="hero">
+  <div class="ring"></div>
+  <div class="grid">
+    <span class="badge">医药中间体 · 精细化工 · 产品定制</span>
+    <h1>可信赖的<em>医药化工产品</em>供应商与定制合作伙伴</h1>
+    <p>我们不仅提供世界先进的医药化工产品，更致力于为伙伴创造价值与利润。强有力的研发能力 + 从克到吨的柔性生产能力。</p>
+    <div class="cta">
+      <a class="btn primary" href="#products">浏览产品 →</a>
+      <a class="btn ghost" href="#contact">提交询盘</a>
+    </div>
+    <div class="stats">
+      <div class="s"><div class="n"><b>20</b>+</div><div class="l">核心产品</div></div>
+      <div class="s"><div class="n"><b>5</b></div><div class="l">产品分类</div></div>
+      <div class="s"><div class="n"><b>g</b> ~ <b>t</b></div><div class="l">克到吨级产能</div></div>
+      <div class="s"><div class="n"><b>18</b>人</div><div class="l">研发团队</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 产品分类 ============ -->
+<section class="section tight" id="cats">
+  <div class="container">
+    <div class="sec-head">
+      <div class="kicker">PRODUCT CATEGORIES</div>
+      <h2>产品分类</h2>
+      <p class="sub">覆盖原料药中间体与精细化工等多个领域</p>
+    </div>
+    <div class="cats">
+      <a class="cat" href="#products"><div class="ico">⚗️</div><h3>原料药中间体</h3><p>酒石酸系列、金刚烷系列等医药中间体</p><span class="more">查看 →</span></a>
+      <a class="cat" href="#products"><div class="ico">🍀</div><h3>食品添加剂</h3><p>姜黄素、乳清酸等食品级产品</p><span class="more">查看 →</span></a>
+      <a class="cat" href="#products"><div class="ico">🧪</div><h3>精细化学品</h3><p>光引发剂、紫外吸收剂等功能化学品</p><span class="more">查看 →</span></a>
+      <a class="cat" href="#contact"><div class="ico">🔧</div><h3>产品定制</h3><p>按客户要求快速放大研发成果</p><span class="more">定制 →</span></a>
+      <a class="cat" href="#products"><div class="ico">🚢</div><h3>进口产品</h3><p>代理引进的优质进口化学品</p><span class="more">查看 →</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 产品中心 ============ -->
+<section class="section products" id="products">
+  <div class="container">
+    <div class="sec-head">
+      <div class="kicker">PRODUCTS</div>
+      <h2>产品中心</h2>
+      <p class="sub">所有产品均附 CAS 号，支持在线询价</p>
+    </div>
+
+    <div class="prod-toolbar">
+      <div class="tabs" id="tabs">
+        <button class="on" data-cat="all">全部产品</button>
+        <button data-cat="api">原料药中间体</button>
+        <button data-cat="food">食品添加剂</button>
+        <button data-cat="fine">精细化学品</button>
+      </div>
+      <div class="search">
+        <span class="ic">🔍</span><input id="searchInput" type="text" placeholder="搜索产品或 CAS 号..." />
+      </div>
+    </div>
+
+    <table class="prod-table" id="prodTable">
+      <thead>
+        <tr><th>产品名称</th><th>CAS 号</th><th>分类</th><th></th></tr>
+      </thead>
+      <tbody id="prodBody"></tbody>
+    </table>
+    <div class="prod-empty" id="prodEmpty">未找到匹配的产品</div>
+  </div>
+</section>
+
+<!-- ============ 关于我们 ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-copy">
+        <div class="sec-head" style="text-align:left; margin-bottom:24px;">
+          <div class="kicker">ABOUT US</div>
+          <h2>关于文丽</h2>
+        </div>
+        <p>杭州文丽化工有限公司位于浙江杭州，主要是<strong>医药中间体</strong>和<strong>精细化工产品</strong>供应商。我们的目标不仅仅是提供客户世界先进的医药化工产品，同时致力于给我们的伙伴创造价值和利润。</p>
+        <ul class="list">
+          <li>强有力的研发能力，可提供客户特殊产品定制</li>
+          <li>强有力的合作工厂，生产能力从克到吨不等</li>
+          <li>按客户要求快速放大研发成果是我们的强项</li>
+          <li>市场定制服务，为客户提供高标准服务</li>
+        </ul>
+        <p><strong>诚信和双赢</strong>是我们的基本准则，我们致力于给客户提供高品质、低成本产品和高标准服务，是您在中国最可信赖的战略合作伙伴。</p>
+      </div>
+      <div class="factory" id="factory">
+        <h3>工厂介绍</h3>
+        <div class="sub">FACTORY · 荆州经济开发区</div>
+        <div class="f-row"><b>注册资金</b><span>3000 万元</span></div>
+        <div class="f-row"><b>占地面积</b><span>75000 平方米</span></div>
+        <div class="f-row"><b>建筑面积</b><span>20000 平方米</span></div>
+        <div class="f-row"><b>生产车间</b><span>规划 7 个，已建成 6 个</span></div>
+        <div class="f-row"><b>研发团队</b><span>3 名博士 · 5 名硕士 · 共 18 人</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 新闻中心 ============ -->
+<section class="section news" id="news">
+  <div class="container">
+    <div class="sec-head">
+      <div class="kicker">NEWS</div>
+      <h2>新闻中心</h2>
+      <p class="sub">行业动态与公司资讯</p>
+    </div>
+    <div class="news-grid">
+      <div class="news-card"><div class="date">展会</div><h3><a href="#">第75届中国国际医药原料药/中间体/包装设备交易会圆满落幕</a></h3><a class="more" href="#">阅读更多 →</a></div>
+      <div class="news-card"><div class="date">行情</div><h3><a href="#">11月18日化工中间体市场行情动态</a></h3><a class="more" href="#">阅读更多 →</a></div>
+      <div class="news-card"><div class="date">行情</div><h3><a href="#">高效氯氟氰菊酯：中间体价格混乱</a></h3><a class="more" href="#">阅读更多 →</a></div>
+      <div class="news-card"><div class="date">行业</div><h3><a href="#">中间体厂家爆炸，相关原料断供致染料涨10%</a></h3><a class="more" href="#">阅读更多 →</a></div>
+      <div class="news-card"><div class="date">技术</div><h3><a href="#">全新化学反应率先破坏最强化学键，可形成全新中间体</a></h3><a class="more" href="#">阅读更多 →</a></div>
+      <div class="news-card"><div class="date">公告</div><h3><a href="#">网络安全宣传</a></h3><a class="more" href="#">阅读更多 →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 联系 / 询盘 ============ -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="sec-head">
+      <div class="kicker">CONTACT</div>
+      <h2>联系我们 / 在线询盘</h2>
+      <p class="sub">留下您的需求，我们将尽快与您联系</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="ci"><div class="ic">📍</div><div><b>公司地址</b><span>杭州市上城区新塘路308号</span></div></div>
+        <div class="ci"><div class="ic">☎</div><div><b>电话 / 传真</b><span>0571-85376473 / 0571-85370406</span></div></div>
+        <div class="ci"><div class="ic">📱</div><div><b>手机</b><span>13588049466</span></div></div>
+        <div class="ci"><div class="ic">✉</div><div><b>邮箱</b><span><a href="mailto:sales@wenleechemical.com">sales@wenleechemical.com</a></span></div></div>
+        <div class="ci"><div class="ic">👤</div><div><b>联系人</b><span>Rice Shou</span></div></div>
+      </div>
+
+      <div class="form-card">
+        <h3>在线询盘 · Inquiry</h3>
+        <form action="/xunpan_add" method="post" name="orders">
+          <div class="f-row">
+            <div class="f-field"><label>您的姓名 *</label><input name="person" type="text" required placeholder="请输入姓名" /></div>
+            <div class="f-field"><label>联系电话 *</label><input name="tel" type="text" required placeholder="手机或座机" /></div>
+          </div>
+          <div class="f-row">
+            <div class="f-field"><label>邮箱</label><input name="youxiang" type="email" placeholder="you@example.com" /></div>
+            <div class="f-field"><label>产品 / 主题</label><input name="protitle" type="text" placeholder="所需产品名称" /></div>
+          </div>
+          <div class="f-field"><label>询盘内容</label><textarea name="chanzhen" placeholder="请描述您的需求、数量、规格等..."></textarea></div>
+          <div class="f-field verify">
+            <input name="verify" type="text" placeholder="验证码" style="width:140px" />
+            <span class="captcha">8K2M</span>
+          </div>
+          <input type="hidden" name="dianzi" value="0571-85376473" />
+          <button class="submit" type="submit">提交询盘</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 页脚 ============ -->
+<footer class="footer">
+  <div class="container f-top">
+    <div class="brand">
+      <div class="logo">
+        <div class="mark">W</div>
+        <div class="txt"><b>杭州文丽化工</b><small>HANGZHOU WENLEE CHEMICAL</small></div>
+      </div>
+      <p>医药中间体与精细化工产品供应商，提供从克到吨级的产品定制与快速放大服务。</p>
+    </div>
+    <div>
+      <h4>快速导航</h4>
+      <ul class="links">
+        <li><a href="#">网站首页</a></li>
+        <li><a href="#about">公司简介</a></li>
+        <li><a href="#products">产品中心</a></li>
+        <li><a href="#news">新闻中心</a></li>
+        <li><a href="#contact">联系我们</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>联系方式</h4>
+      <ul class="links">
+        <li>地址：杭州市上城区新塘路308号</li>
+        <li>电话：0571-85376473</li>
+        <li>邮箱：sales@wenleechemical.com</li>
+      </ul>
+    </div>
+  </div>
+  <div class="f-bottom">
+    <div class="container">© 2015-2025 杭州文丽化工有限公司 版权所有 · www.wenleechemical.com · <a href="#">著作权声明</a></div>
+  </div>
+</footer>
+
+<button class="totop" id="totop" title="返回顶部">↑</button>
+
+<script>
+/* ===== 产品数据(来自原站) ===== */
+const products = [
+  { name:"L(+)-酒石酸", cas:"87-69-4", cat:"api" },
+  { name:"L(+)-酒石酸钾钠", cas:"304-59-6", cat:"api" },
+  { name:"DL-酒石酸", cas:"133-37-9", cat:"api" },
+  { name:"1,3-二甲基金刚烷", cas:"702-79-4", cat:"api" },
+  { name:"1-溴-3,5-二甲基金刚烷", cas:"941-37-7", cat:"api" },
+  { name:"3,4-二苄氧基苯甲醛", cas:"5447-02-9", cat:"api" },
+  { name:"5-氯代苯并三氮唑", cas:"94-97-3", cat:"fine" },
+  { name:"地喹氯铵", cas:"7500-96-4", cat:"api" },
+  { name:"1-乙基-(3-二甲基氨基丙基)碳酰二亚胺盐酸盐(EDC·HCl)", cas:"5952-53-8", cat:"api" },
+  { name:"光引发剂 369", cas:"9313-12-1", cat:"fine" },
+  { name:"光引发剂 ITX", cas:"5495-84-1", cat:"fine" },
+  { name:"四乙基米氏酮", cas:"90-93-7", cat:"fine" },
+  { name:"3-[3-氯-1-(2-氯乙基)丙基]-6-氟-苯并[D]异恶唑", cas:"3491-15-8", cat:"api" },
+  { name:"1,4-苯并二噁烷-2-羧酸", cas:"3663-80-7", cat:"fine" },
+  { name:"4,4'-双(二苯氨基)二苯甲酮", cas:"2873-76-9", cat:"fine" },
+  { name:"双(4-(二苯基氨基)苯基)砜", cas:"4922-35-5", cat:"fine" },
+  { name:"氟雷拉纳", cas:"4731-61-3", cat:"api" },
+  { name:"2-氯-5-氨基苯酚", cas:"6358-06-1", cat:"api" },
+  { name:"辛二酸", cas:"505-48-6", cat:"api" },
+  { name:"5-羧基苯并三唑", cas:"3814-12-2", cat:"fine" }
+];
+const catLabel = { api:"原料药中间体", food:"食品添加剂", fine:"精细化学品" };
+
+let curCat = "all";
+const body = document.getElementById("prodBody");
+const empty = document.getElementById("prodEmpty");
+
+function render(){
+  const kw = document.getElementById("searchInput").value.trim().toLowerCase();
+  const rows = products.filter(p =>
+    (curCat === "all" || p.cat === curCat) &&
+    (!kw || p.name.toLowerCase().includes(kw) || p.cas.toLowerCase().includes(kw))
+  );
+  body.innerHTML = rows.map(p =>
+    `<tr>
+      <td class="name">${p.name}</td>
+      <td class="cas">${p.cas}</td>
+      <td><span class="tag">${catLabel[p.cat] || "产品定制"}</span></td>
+      <td class="arrow"><a href="#contact">询价 →</a></td>
+    </tr>`
+  ).join("");
+  empty.style.display = rows.length ? "none" : "block";
+}
+
+document.getElementById("tabs").addEventListener("click", e => {
+  const b = e.target.closest("button"); if(!b) return;
+  document.querySelectorAll("#tabs button").forEach(x => x.classList.remove("on"));
+  b.classList.add("on"); curCat = b.dataset.cat; render();
+});
+document.getElementById("searchInput").addEventListener("input", render);
+render();
+
+/* ===== 返回顶部 ===== */
+const totop = document.getElementById("totop");
+window.addEventListener("scroll", () => totop.classList.toggle("show", window.scrollY > 500));
+totop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+</script>
+</body>
+</html>
